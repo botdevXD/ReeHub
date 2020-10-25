@@ -40,4 +40,20 @@ function LIB:SetFunction(OldFunction, NewFunction)
    	end
 end
 
+function LIB:NCHOOK(CHOSEN_FUNCTION, NEWFUNCTION)
+    local mt = getrawmetatable(game)
+    local OLD = mt.__namecall
+    setreadonly(mt, false)
+    mt.__namecall = newcclosure(function(self, ...)
+        local args = {...}
+        local method = getnamecallmethod()
+        if method == tostring(CHOSEN_FUNCTION) then
+            return NEWFUNCTION(self, ...)
+        end
+        return OLD(self, unpack(args))
+    end)
+    setreadonly(mt, true)
+    return OLD
+end
+
 return LIB
