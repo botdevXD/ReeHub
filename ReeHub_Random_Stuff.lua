@@ -40,10 +40,4 @@ function LIB:SetFunction(OldFunction, NewFunction)
    	end
 end
 
-function LIB:AimAtPlayer(Camera, Mouse, target, dist)
-    local TARGETPOS = Camera:WorldToScreenPoint(target.Position + Vector3.new(0, dist / (100 / .45), 0))
-    local GOTO = Vector2.new((TARGETPOS.X - Mouse.X) * .25, (TARGETPOS.Y - Mouse.Y) * .25)
-    mousemoverel(GOTO.X, GOTO.Y)
-end
-
 return LIB
