@@ -37,7 +37,7 @@ function LIB:SetFunction(OldFunction, NewFunction)
                 end;
             end;
         end;
-   	end
+    end
 end
 
 function LIB:NCHOOK(CHOSEN_FUNCTION, NEWFUNCTION)
