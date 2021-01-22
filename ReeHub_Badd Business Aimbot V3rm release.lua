@@ -1,5 +1,5 @@
 --[[
-Created by 0x74.
+Created by 0x74#7342
 I'm not returning to exploiting I just was bored and wanted to release something so do not come at me for my past.
 also hi old community
 ]]
