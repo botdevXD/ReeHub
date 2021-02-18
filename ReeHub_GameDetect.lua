@@ -11,6 +11,7 @@ local ReeHub_GameDetect = {}
 local SupportedGames = {
 	["292439477"] = "Phantom Forces",
 	["4872321990"] = "Islands",
+	["5899156129"] = "Islands",
 	["4779613061"] = "South London 2",
 	["6094061470"] = "Arcade Empire"
 }
