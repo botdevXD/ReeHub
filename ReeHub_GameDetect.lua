@@ -14,7 +14,7 @@ local SupportedGames = {
 	--["5899156129"] = "Islands",
 	["4779613061"] = "South London 2",
 	["6094061470"] = "Arcade Empire",
-	--["5898483760"] = "Dust",
+	["5898483760"] = "Dust",
 }
 function GetSupportedGames(PlaceID)
 	if SupportedGames[tostring(PlaceID)] then
