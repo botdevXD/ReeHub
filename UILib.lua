@@ -144,7 +144,9 @@ function finity.new(isdark, gprojectName, thinProject)
 		UpConnection = nil,
 		ToggleKey = Enum.KeyCode.Home,
 	}
-
+	self2.IsUIClosed = function()
+		return toggled
+	end
 	self2.ChangeToggleKey = function(NewKey)
 		finityData.ToggleKey = NewKey
 		
